@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <!-- Firebase Storage SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage.js"></script>
+</head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #ccc 1px solid;
+        }
+        header h1 {
+            text-align: center;
+            margin: 0;
+        }
+        .content {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .content1 {
+            padding: 10px;
+            background: #0a03146e;
+            margin-top: 10px;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+    </style>
+    <script>
+        function openModal(imgElement) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("modalImage");
+            var captionText = document.getElementById("caption");
+        
+            modal.style.display = "block";
+            modalImg.src = imgElement.src;
+            captionText.innerHTML = imgElement.alt;
+        }
+        
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        
+        <h1 class="navbar-brand"><i>Projects and Internship</i></h1>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="project.html">Internship/ Projects</a>
+                    </li>
+            <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/Mirsath" target="_blank">GitHub</a>
+                    </li>          
+            <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/irsath-azeez-219102186/" target="_blank">LinkedIn</a>
+                    </li>
+            <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/irrino/resume/blob/main/Irsath_resume.pdf" target="_blank">Resume</a>
+                    </li>
+                    
+            <li class="nav-item">
+                        <a class="nav-link" href="honors.html">Honors</a>
+                    </li>
+            <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+            <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+<br><br>
+    <div class="container">
+        <div class="content">
+            <div style="font-size: 30px;"><u>Contact Infomation</u></div><br>
+            <p>Name: Irsath Azeez
+                <br>
+                Email: <a href="mailto:irsathnir@gmail.com">irsathnir@gmail.com</a>
+                <br>
+                Phone: 646-755-2024
+                <br>
+                LinkedIn: <a href="https://www.linkedin.com/in/irsath-azeez-219102186/" target="_blank">https://www.linkedin.com/in/irsath-azeez-219102186/</a>
+            </p>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br>
+    </div>
+   
+    <footer style="background-color:#6c757d; color:#fff; text-align:center; padding:20px 0; margin-top:50px;">
+        &copy; 2024 Irsath Azeez. All Rights Reserved.
+    </footer>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

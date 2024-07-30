@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects and Internship</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <!-- Firebase Storage SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage.js"></script>
+</head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #ccc 1px solid;
+        }
+        header h1 {
+            text-align: center;
+            margin: 0;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        li {
+            margin: 10px 0;
+        }
+        .content {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .content1 {
+            padding: 10px;
+            background: #0a03146e;
+            margin-top: 10px;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .grid-item {
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            padding-top: 60px; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0.9); 
+        }
+        
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+        }
+        
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    </style>
+    <script>
+        function openModal(imgElement) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("modalImage");
+            var captionText = document.getElementById("caption");
+        
+            modal.style.display = "block";
+            modalImg.src = imgElement.src;
+            captionText.innerHTML = imgElement.alt;
+        }
+        
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        
+        <h1 class="navbar-brand"><i>Projects and Internship</i></h1>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="project.html">Internship/ Projects</a>
+                    </li>
+            <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/Mirsath" target="_blank">GitHub</a>
+                    </li>          
+            <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/irsath-azeez-219102186/" target="_blank">LinkedIn</a>
+                    </li>
+            <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/irrino/resume/blob/main/Irsath_resume.pdf" target="_blank">Resume</a>
+                    </li>
+                    
+            <li class="nav-item">
+                        <a class="nav-link" href="honors.html">Honors</a>
+                    </li>
+            <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+            <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+<br>
+    <div class="container">
+        <div class="content1"><h2><u>Internship</u></h2></div>
+        <div class="content">
+            <div><h3><a href="https://www.engineering.columbia.edu/news/columbia-amazon-summer-undergraduate-research-experience-program/2023-sure-fellows" target="_blank"> <ul><li>Amazon & Columbia University SURE</li></ul></a></h3></div>
+            <p>
+                From June 1, 2023, to August 3, 2023, I served as a Research Scholar in the SURE research program at Columbia University, in partnership with Amazon. During this period, I worked as a computer science intern, focusing on the single-cell analysis of the microbiome. My role involved extensive data mining and time-series analysis, utilizing machine learning techniques to handle abundant datasets. I designed a sophisticated system to analyze metagenomic data, employing the anndata structure with Python, significantly advancing our research capabilities in this field.
+            </p>
+            <br>
+            
+            <div class="image-grid">
+                <img src="https://raw.githubusercontent.com/irrino/images/main/1.HEIC" alt="Image 1" class="grid-item" onclick="openModal(this)">
+                <img src="https://raw.githubusercontent.com/irrino/images/main/2.HEIC" alt="Image 2" class="grid-item" onclick="openModal(this)">
+                <img src="https://github.com/irrino/images/blob/main/6.JPG?raw=true" alt="Image 3" class="grid-item" onclick="openModal(this)">
+                <img src="https://github.com/irrino/images/blob/main/7.JPG?raw=true" alt="Image 4" class="grid-item" onclick="openModal(this)">
+                <img src="https://github.com/irrino/images/blob/main/5.JPG?raw=true" alt="Image 5" class="grid-item" onclick="openModal(this)">
+                <!-- Add more images as needed -->
+            </div>
+        
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="caption"></div>
+            </div>
+        
+            
+
+
+        </div>
+    </div>
+
+    <div class="container">
+        <br>
+        <div class="content1" ><h2><u>Projects</u></h2></div>
+        <div class="content">  
+            <ul>
+                <li>Online sales web application using PHP, HTML, MySQL, CSS, and JavaScript programming languages</li>
+                <li>CPU scheduling process simulator using Java programming language</li>
+                <li>Created Disk Algorithm of FCFS, SCAN, CSCAN using Java language</li>
+                <li>Used C++ programming language to create a software to help students to learn the basics of the language through multiple choice questions and selected study materials</li>
+                <li>Created Minesweeper game using Java programming language</li>
+                <li>Created a program that solves unknown variables in multiple linear equations using the theory of Cramer’s rule using Java programming language</li>
+                <li>Created a program that checks graph connectivity, and tree traversal technique using C++ programming language</li>
+                <li>Created an AI project using machine deep learning with LSTM to create predictions on the next word in a paragraph or sentence as a user is typing</li>
+                <li>Created an Android mobile software that guides students on how to learn Android mobile concepts using resources and quizzes</li>
+                <li>Data Analysis Project: Completed end-to-end data analysis on the impact of earthquakes in Turkey, employing statistical methods and data visualization tools to generate actionable insights. Developed an informative dashboard that visually represented seismic activity trends, aiding in effective decision-making for disaster preparedness and response strategies.</li>
+                <li>Machine Learning: Analyzed large-scale payment transaction data and utilized it to train a K-Nearest Neighbors (KNN) model for classifying fraudulent and non-fraudulent transactions. Achieved an accuracy of 0.99 in predicting fraudulent transactions with specific transaction data.</li>
+            </ul>
+            <div>Please click here for the projects code repository: <a href="https://github.com/Mirsath" target="_blank"><u>GitHub Page</u></a></div>
+        </div>
+    </div>
+   
+    <footer style="background-color:#6c757d; color:#fff; text-align:center; padding:20px 0; margin-top:50px;">
+        &copy; 2024 Irsath Azeez. All Rights Reserved.
+    </footer>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
