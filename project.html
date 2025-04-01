@@ -8,10 +8,25 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+   
+
+
     <!-- Firebase Storage SDK -->
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage.js"></script>
+    
 </head>
     <style>
+        a.intern{
+            font-family: "Moderustic", sans-serif;
+            font-optical-sizing: auto;
+            font-weight:300;
+            font-style: normal;
+            }
+
+
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -138,7 +153,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         
-        <h1 class="navbar-brand"><i>Projects and Internship</i></h1>
+        <a href="index.html"><img src = "sl.png" class="navbar-brand" width=200 height=75 id="slimage"/></a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                 
@@ -172,7 +187,7 @@
     <div class="container">
         <div class="content1"><h2><u>Internship</u></h2></div>
         <div class="content">
-            <div><h3><a href="https://www.engineering.columbia.edu/news/columbia-amazon-summer-undergraduate-research-experience-program/2023-sure-fellows" target="_blank"> <ul><li>Amazon & Columbia University SURE</li></ul></a></h3></div>
+            <div><h3><a class = "intern" href="https://www.engineering.columbia.edu/news/columbia-amazon-summer-undergraduate-research-experience-program/2023-sure-fellows" target="_blank"> <ul><li>Amazon & Columbia University SURE</li></ul></a></h3></div>
             <p>
                 From June 1, 2023, to August 3, 2023, I served as a Research Scholar in the SURE research program at Columbia University, in partnership with Amazon. During this period, I worked as a computer science intern, focusing on the single-cell analysis of the microbiome. My role involved extensive data mining and time-series analysis, utilizing machine learning techniques to handle abundant datasets. I designed a sophisticated system to analyze metagenomic data, employing the anndata structure with Python, significantly advancing our research capabilities in this field.
             </p>
