@@ -7,15 +7,51 @@
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bgImage" style="margin:0; padding:0;">
 
-   
+    <style>
+        .bgImage{
+            /* Background image for the body */
+            background-image: url('body.jpg'); /* Replace with your image path */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the image */
+            background-attachment: fixed; /* Fix the background during scroll */
+            height: 100vh; /* Full height of the viewport */
+            width: 100%; /* Full width of the viewport */
+        }
+        .container {
+            display: flex;
+            flex-direction: row; /* Align items in a row */
+            align-items: left;
+            width: 100%;
+        }
+    
+        .left-divider{
+            flex: 0 0 0%; /* Set the width of the left section */
+            padding: 0px;
+        }
+    
+        .left-divider {
+            border-right: 2px; /* Add a vertical divider to the left section */
+            padding-right: 0px;
+        }
+    
+        .right-divider {
+            padding-left: 80px;
+            flex: 1;
+        }
+    
+        .profile-image {
+            display: block; /* Ensures the image is treated as a block element */
+            margin: 0 auto;
+        }
+    </style>
 
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         
-	<img src = "sl.jpeg" class="navbar-brand" width=200 height=75 id="slimage"></img>
+	<a href="index.html"><img src = "sl.png" class="navbar-brand" width=200 height=75 id="slimage"/></a>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                
@@ -45,18 +81,42 @@
         </div>
     </nav>
 
+<br><br><br><br>
+    <div class="container">
+        <div class="left-divider" style="background-color:aliceblue">
+            <img src="irsath.JPG" alt="Irsath Azeez" class="profile-image" width="200" height="300"/>
+        
+            <h3 style="text-align: center; margin-top: 10px; font-family:Georgia, 'Times New Roman', Times, serif">Irsath Azeez</h3> 
+            <p style="text-align: center; font-size: 16px; color: #555;">Bachelors in Computer Science</p>
+            <p style="text-align: center; font-size: 16px; color: #555;">CUNY Lehman College</p>
+        
+        </div>
+        <div class="right-divider">
+            <p style="font-style: normal; line-height: 2;">Hi, my name is Irsath Azeez, and I hold a Bachelor's Degree in Computer Science from CUNY Lehman College. Throughout my academic journey, I have developed a strong foundation in data analysis, programming, and system design. My studies have fueled my passion for technology, and I am continuously exploring new ways to apply my knowledge in real-world scenarios.
 
-
-<div class="container">
-        <br>
-        <h1>Irsath Azeez</h1><br>
-<img src="irsath.JPG" alt="Irsath Azeez" class="profile-image" width=200 height=300>
-	<br><br>
-        <p>Hi, my name is Irsath Azeez. I hold a Bachelors Degree in Computer Science from CUNY Lehman College. My academic journey and experiences have equipped me with a solid foundation in data analysis, which I have further honed through various projects and through my role as a Teaching Assistant at my college. As an AI enthusiast, I find immense joy in exploring the realms of artificial intelligence and machine learning.</p>
-        <p>Problem solving is my forte, and I am always on the lookout for new challenges that can help me grow and expand my knowledge. Being an Asian American, I embrace the diverse perspectives that my background offers, and I am keen on learning from experts in the field.</p>
-        <p>When I am not immersed in data or coding, I enjoy playing cricket, soccer and playing video games. These activities help me relax and recharge, providing a good balance to my analytical pursuits.</p>
-        <p>I am excited about the future and the opportunities it holds in the world of AI and data analysis. Thank you for visiting my page!</p>
+                I’ve had the privilege of gaining practical experience as a Teaching Assistant, where I helped students understand complex topics in data analysis and programming. This experience sharpened my communication skills and reinforced my passion for helping others succeed while solidifying my own understanding of the subject matter.
+                
+                As an AI enthusiast, I am particularly captivated by the potential of artificial intelligence and machine learning. I’m excited about how AI can solve complex problems, enhance efficiencies, and unlock new possibilities across various industries. In my free time, I engage with AI through personal projects, focusing on deep learning and predictive modeling. I’ve also had the opportunity to work on hands-on projects involving real-world data, such as seismic activity analysis for disaster preparedness and understanding the impact of large-scale events like earthquakes.
+                
+                Problem-solving is at the heart of what I do. Whether it's tackling complex programming challenges, analyzing vast datasets, or designing efficient systems, I approach each problem with a structured mindset and an eagerness to learn. 
+        </div>
     </div>
+    <div class="container" style="line-height: 2;">
+        <br>
+        I am driven by the idea that every challenge presents an opportunity to improve, both as a professional and as an individual. I take pride in my ability to break down problems into manageable tasks and develop innovative solutions that deliver impactful results.
+                
+                In addition to my technical expertise, I am a firm believer in the power of teamwork and collaboration. My experiences in various academic and professional settings have shown me the value of working with others who bring diverse perspectives and skill sets to the table. I’m always looking for opportunities to collaborate with individuals and teams who are passionate about creating innovative solutions and making a positive impact.
+                
+        Being an Asian American, I value the diversity of thought, culture, and perspective that my background offers. I see these differences as opportunities to learn and grow, and they inform the way I approach my work and interact with others. I am deeply committed to building an inclusive environment where people from all backgrounds can thrive and contribute their unique insights.
+                
+        When I’m not immersed in data, coding, or AI, I enjoy playing cricket, soccer, and video games. These activities help me stay balanced and provide a healthy outlet for creativity and relaxation. Whether I’m on the field competing in cricket or soccer or immersed in the strategy of video games, I find that these hobbies complement my analytical mindset and help me recharge.
+                
+        Looking forward, I’m eager to continue learning and growing within the fields of AI, data analysis, and software development. I’m excited about the future of technology and the endless possibilities it offers to innovate and improve our world. I’m always open to new opportunities, collaborations, and challenges that push the boundaries of what’s possible in the realm of technology.
+                
+        Thank you for taking the time to visit my page, and I look forward to connecting with you!
+    </div>
+
+
 <br><br><br><br>
 
 
